@@ -19,7 +19,7 @@
             </div>
             <div class="col-12 mb-2">
               <label for="#" class="form-label">รายละเอียด</label>
-              <textarea class="form-control" aria-label="With textarea"></textarea>            </div>
+              <textarea class="form-control" aria-label="With textarea" placeholder="รายละเอียด"></textarea>            </div>
           </form>
         </div>
       </div>
@@ -53,7 +53,8 @@
               </div>
               <div class="col-12 mb-2">
                 <label for="#" class="form-label">รายละเอียด</label>
-                <textarea class="form-control" aria-label="With textarea"></textarea>              </div>
+                <textarea class="form-control" aria-label="With textarea"></textarea>              
+              </div>
             </form>
         </div>
       </div>

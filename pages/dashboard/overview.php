@@ -2,11 +2,11 @@
     <div class="inner">
         <div class="app-card-body p-3 p-lg-4">
             
-            <h3 class="mb-3">มั่งมี ฟาร์มกระต่าย ยินดีต้อนรับ</h3>
+            <h2 class="mb-3"><strong>มั่งมี ฟาร์มกระต่าย ยินดีต้อนรับ</strong></h2>
             
             <div class="row gx-5 gy-3">
                 <div class="col-12 col-lg-9">
-                    <div>ระบบจัดการฟาร์มกระต่ายสวยๆ ได้มาฟรีเพราะมีนักศึกษาใจดีทำให้ ถ้าไม่ทำมันก็ติด E</div>
+                    <div><h5>ระบบจัดการฟาร์มกระต่ายสวยๆ ได้มาฟรีเพราะมีนักศึกษาใจดีทำให้ ถ้าไม่ทำมันก็ติด E</h5></div>
                 </div><!--//col-->
             </div><!--//row-->
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -28,7 +28,7 @@
     <div class="col-6 col-lg-3">
         <div class="app-card app-card-stat shadow-sm h-100">
             <div class="app-card-body p-3 p-lg-4">
-                <h4 class="stats-type mb-1">ป่วยและกำลังรักษา</h4>
+                <h4 class="stats-type mb-1">รับการรักษา</h4>
                 <div class="stats-figure">250</div>
             </div><!--//app-card-body-->
             <a class="app-card-link-mask" href="#"></a>
@@ -37,7 +37,7 @@
     <div class="col-6 col-lg-3">
         <div class="app-card app-card-stat shadow-sm h-100">
             <div class="app-card-body p-3 p-lg-4">
-                <h4 class="stats-type mb-1">พร้อมผสมพันธุ์</h4>
+                <h4 class="stats-type mb-1">ผสมพันธุ์</h4>
                 <div class="stats-figure">23</div>
             </div><!--//app-card-body-->
             <a class="app-card-link-mask" href="#"></a>
@@ -61,13 +61,13 @@
             <div class="app-card-header p-3">
                 <div class="row justify-content-between align-items-center">
                     <div class="col-auto">
-                        <h4 class="app-card-title">กระต่ายใกล้คลอด</h4>
+                        <h4 class="app-card-title"><i class="fa-solid fa-calendar-days"></i>  กระต่ายใกล้คลอด</h4>
                     </div><!--//col-->
-                    <div class="col-auto">
+                    <!-- <div class="col-auto">
                         <div class="card-header-action">
                             <a href="#">ดูข้อมูลทั้งหมด</a>
                         </div><!--//card-header-actions-->
-                    </div><!--//col-->
+                    <!-- </div> -->
                 </div><!--//row-->
             </div><!--//app-card-header-->
             <div class="app-card-body p-3 p-lg-4">
@@ -75,11 +75,11 @@
                     <table class="table table-borderless mb-0">
                         <thead>
                             <tr>
-                                <th class="meta">รหัสกรง</th>
-                                <th class="meta">รหัสแม่พันธุ์</th>
-                                <th class="meta">วันที่ผสมพันธ์ุ</th>
-                                <th class="meta">อายุครรภ์</th>
-                                <th class="meta">กำหนดคลอด</th>
+                                <th class="meta"><span class="badge bg-success">รหัสกรง</span></th>
+                                <th class="meta"><span class="badge bg-success">รหัสแม่พันธุ์</span></th>
+                                <th class="meta"><span class="badge bg-success">วันที่ผสมพันธุ์</span></th>
+                                <th class="meta"><span class="badge bg-success">อายุครรภ์</span></th>
+                                <th class="meta"><span class="badge bg-success">กำหนดคลอด</span></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -87,50 +87,8 @@
                                 <td>TR-01</td>
                                 <td>R-01</td>
                                 <td>11-12-2019</td>
-                                <td>1 เดือน 1 วัน</td>
-                                <td>11-12-2019</td>
-                            </tr>
-                            <tr>
-                                <td>TR-02</td>
-                                <td>R-01</td>
-                                <td>11-12-2019</td>
-                                <td>1 เดือน 1 วัน</td>
-                                <td>11-12-2019</td>
-                            </tr>
-                            <tr>
-                                <td>TR-03</td>
-                                <td>R-01</td>
-                                <td>11-12-2019</td>
-                                <td>1 เดือน 1 วัน</td>
-                                <td>11-12-2019</td>
-                            </tr>
-                            <tr>
-                                <td>TR-04</td>
-                                <td>R-01</td>
-                                <td>11-12-2019</td>
-                                <td>1 วัน</td>
-                                <td>11-12-2019</td>
-                            </tr>
-                            <tr>
-                                <td>TR-05</td>
-                                <td>R-01</td>
-                                <td>11-12-2019</td>
-                                <td>1 เดือน 1 วัน</td>
-                                <td>11-12-2019</td>
-                            </tr>
-                            <tr>
-                                <td>TR06</td>
-                                <td>R-01</td>
-                                <td>11-12-2019</td>
-                                <td>1 วัน</td>
-                                <td>11-12-2019</td>
-                            </tr>
-                            <tr>
-                                <td>BR-07</td>
-                                <td>R-01</td>
-                                <td>11-12-2019</td>
-                                <td>1 เดือน 1 วัน</td>
-                                <td>11-12-2019</td>
+                                <td>29 วัน</td>
+                                <td><span class="text-danger">อีก 5 วัน</span></td>
                             </tr>
                         </tbody>
                     </table>

@@ -33,9 +33,9 @@
                                     <td><button data-toggle="modal" class="btn btn-sm btn-danger text-white"><i class="fa-solid fa-trash"></i></button></td>
                                 </tr>
                                 <tr>
-                                    <td>RB05</td>
-                                    <td>RB02</td>
-                                    <td><span class="badge bg-warning">กำลังตั้งท้อง</span></td>
+                                    <td>RB07</td>
+                                    <td>RB01</td>
+                                    <td><span class="badge bg-warning">กำลังรอผล</span></td>
                                     <td><button data-bs-toggle="modal" data-bs-target="#infoModalRabbitHb" class="btn btn-sm btn-primary text-white"><i class="fa-solid fa-circle-info"></i></button></td>
                                     <td><button data-bs-toggle="modal" data-bs-target="#editModalRabbitHb" class="btn btn-sm btn-warning text-white"><i class="fa-solid fa-pen-to-square"></i></button></td>
                                     <td><button data-toggle="modal" class="btn btn-sm btn-danger text-white"><i class="fa-solid fa-trash"></i></button></td>

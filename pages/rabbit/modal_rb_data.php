@@ -51,12 +51,12 @@
             </div>
             <div class="row mb-2">
               <div class="col">
-                <label class="form-label">สายพันธุ์พ่อ</label>
-                <input type="text" class="form-control" value="กระต่ายพื้นเมือง" disabled>
+                <label class="form-label">รหัสพ่อพันธุ์</label>
+                <input type="text" class="form-control" value="00221" disabled>
               </div>
               <div class="col">
-                <label class="form-label">สายพันธุ์แม่</label>
-                <input type="text" class="form-control" value="กระต่ายพื้นเมือง" disabled>
+                <label class="form-label">รหัสแม่พันธุ์</label>
+                <input type="text" class="form-control" value="00021" disabled>
               </div>
             </div>
           </form>
@@ -94,28 +94,27 @@
             <div class="row mb-2">
               <div class="col">
                 <label class="form-label">เพศ</label>
-                <input type="text" class="form-control">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>---</option>
+                  <option value="1">เพศผู้</option>
+                  <option value="2">เพศเมีย</option>
+                </select>
               </div>
-              <div class="col">
-                <label class="form-label">อายุ</label>
-                <input type="text" class="form-control">
-              </div>
-            </div>
-            <div class="row mb-2">
               <div class="col">
                 <label class="form-label">วันเกิด</label>
                 <input type="date" class="form-control">
               </div>
+            </div>
+            <div class="row mb-2">
               <div class="col">
                 <label class="form-label">สถานะ</label>
                 <select class="form-select" aria-label="Default select example">
                   <option selected>---</option>
+                  <option value="1">ว่าง</option>
                   <option value="1">พ่อพันธุ์</option>
                   <option value="2">แม่พันธุ์</option>
-              </select>
+                </select>
               </div>
-            </div>
-            <div class="row mb-2">
               <div class="col">
                 <label class="form-label">สายพันธุ์</label>
                 <select class="form-select" aria-label="Default select example">
@@ -123,8 +122,10 @@
                   <option value="1">กระต่ายพื้นเมือง</option>
                   <option value="2">พันธุ์คาลิฟอร์เนียน</option>
                   <option value="3">พันธุ์ชินชินล่า</option>
-              </select>
+                </select>
               </div>
+            </div>
+            <div class="row mb-2">
               <div class="col">
                 <label class="form-label">ประเภท</label>
                 <select class="form-select" aria-label="Default select example">
@@ -132,27 +133,17 @@
                   <option value="1">กระต่ายเนื้อ</option>
                   <option value="2">กระต่ายขน</option>
                   <option value="2">กระต่ายสวยงาม</option>
-              </select>
+                </select>
               </div>
             </div>
             <div class="row mb-2">
               <div class="col">
-                <label class="form-label">สายพันธุ์พ่อ</label>
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>---</option>
-                  <option value="1">กระต่ายพื้นเมือง</option>
-                  <option value="2">พันธุ์คาลิฟอร์เนียน</option>
-                  <option value="3">พันธุ์ชินชินล่า</option>
-              </select>
+                <label class="form-label">รหัสพ่อพันธุ์</label>
+                <input type="text" class="form-control">
               </div>
               <div class="col">
-                <label class="form-label">สายพันธุ์แม่</label>
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>---</option>
-                  <option value="1">กระต่ายพื้นเมือง</option>
-                  <option value="2">พันธุ์คาลิฟอร์เนียน</option>
-                  <option value="3">พันธุ์ชินชินล่า</option>
-              </select>
+                <label class="form-label">รหัสแม่พันธุ์</label>
+                <input type="text" class="form-control">
               </div>
             </div> 
           </form>
@@ -233,20 +224,12 @@
               </div>
               <div class="row mb-2">
                 <div class="col">
-                  <label class="form-label">สายพันธุ์พ่อ</label>
-                  <select class="form-select" aria-label="Default select example">
-                    <option selected>กระต่ายพื้นเมือง</option>
-                    <option value="2">พันธุ์คาลิฟอร์เนียน</option>
-                    <option value="3">พันธุ์ชินชินล่า</option>
-                </select>
+                  <label class="form-label">รหัสพ่อพันธุ์</label>
+                  <input type="text" class="form-control">
                 </div>
                 <div class="col">
-                  <label class="form-label">สายพันธุ์แม่</label>
-                  <select class="form-select" aria-label="Default select example">
-                    <option selected>กระต่ายพื้นเมือง</option>
-                    <option value="2">พันธุ์คาลิฟอร์เนียน</option>
-                    <option value="3">พันธุ์ชินชินล่า</option>
-                </select>
+                  <label class="form-label">รหัสแม่พันธุ์</label>
+                  <input type="text" class="form-control">
                 </div>
               </div>
             </form>

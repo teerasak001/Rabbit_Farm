@@ -25,7 +25,7 @@
                     <input type="text" class="form-control" value="10-12-2019" disabled>
                 </div>
                 <div class="col">
-                    <label class="form-label">กำหนดคลอด</label>
+                    <label class="form-label">วันคลอด</label>
                     <input type="text" class="form-control" value="10-01-2019" disabled>
                 </div>
             </div>
@@ -79,7 +79,7 @@
                 <select class="form-select" aria-label="Default select example">
                   <option selected>---</option>
                   <option value="1">คลอดแล้ว</option>
-                  <option value="2">ผสมพันธุ์ติด</option>
+                  <option value="2">กำลังรอผล</option>
                   <option value="3">ผสมพันธุ์ไม่ติด</option>
               </select>              </div>
             </div>
@@ -127,7 +127,7 @@
                     <label class="form-label">สถานะ</label>
                     <select class="form-select" aria-label="Default select example">
                         <option selected>คลอดแล้ว</option>
-                        <option value="2">กำลังตั้งท้อง</option>
+                        <option value="2">กำลังรอผล</option>
                         <option value="3">ผสมพันธุ์ไม่ติด</option>
                     </select>              
                 </div>
