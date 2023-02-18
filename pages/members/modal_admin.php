@@ -179,7 +179,7 @@
             <div class="row mb-2">
               <div class="col">
                 <label class="form-label">ที่อยู่</label>
-                <input type="text" class="form-control" value="">
+                <textarea class="form-control" aria-label="With textarea"></textarea>
               </div>
             </div>
           </form>

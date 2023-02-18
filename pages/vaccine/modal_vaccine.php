@@ -19,8 +19,7 @@
             </div>
             <div class="col-12 mb-2">
               <label for="#" class="form-label">รายละเอียด</label>
-              <input type="text" class="form-control" id="#" placeholder="รายละเอียด..." required>
-            </div>
+              <textarea class="form-control" aria-label="With textarea"></textarea>            </div>
           </form>
         </div>
       </div>
@@ -54,8 +53,7 @@
               </div>
               <div class="col-12 mb-2">
                 <label for="#" class="form-label">รายละเอียด</label>
-                <input type="text" class="form-control" id="#" value="ใช้สำหรับกระต่ายที่ปวดหัวตัวร้อน" required>
-              </div>
+                <textarea class="form-control" aria-label="With textarea"></textarea>              </div>
             </form>
         </div>
       </div>
