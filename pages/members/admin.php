@@ -1,3 +1,19 @@
+<?php
+
+use function PHPSTORM_META\type;
+
+    include_once('include/connect.php'); 
+
+    if (isset($_REQUEST['btnAddModal'])) {
+        try {
+           $name = $_REQUEST['imgFile'];
+        } catch (PDOException $e) {
+            $e->getMessage();
+        }
+    }
+
+?>
+
 <h4 class="app-page-title">
     <span class="nav-icon">
         <span><i class="fa-solid fa-pen-to-square"></i> จัดการข้อมูลแอดมิน</span>
