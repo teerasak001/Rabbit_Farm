@@ -46,6 +46,9 @@
 		    <div class="container-xl">
 
           <?php 
+            if (isset($_SESSION['insert_success'])) {
+              echo $_SESSION['insert_success'];
+            }
 
             if (!isset($_GET['page']) && empty($_GET['page'])) {
               include('pages/dashboard/overview.php');
@@ -94,6 +97,7 @@
     <!-- DataTable -->
     <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script>
 

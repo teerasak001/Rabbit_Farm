@@ -1,17 +1,26 @@
-<?php
+<?php  
 
-    include_once('include/connect.php'); 
+include_once('include/connect.php');
 
-    if (isset($_REQUEST['btnAddModal'])) {
-        try {
-           $name = $_REQUEST['imgFile'];
-        } catch (PDOException $e) {
-            $e->getMessage();
-        }
-    }
+if (isset($_POST) && !empty($_POST)) {
+  $username = $_POST['username'];
+  $password = $_POST['password'];
+  $phone = $_POST['tel'];
+  $email = $_POST['email'];
+  $role = $_POST['role'];
+
+  $sql_insert = "INSERT INTO members (`username`,`password`,`tel`,`email`,`role`) VALUE ('$username','$password','$phone','$email','$role')";
+  if (mysqli_query($conn,$sql_insert)) {
+    echo "success";
+  }else{
+    echo "Error";
+  }  
+}
+mysqli_close($conn);
 
 ?>
 
+<!-- Table Addmin -->
 <h4 class="app-page-title">
     <span class="nav-icon">
         <span><i class="fa-solid fa-pen-to-square"></i> จัดการข้อมูลแอดมิน</span>
@@ -30,7 +39,7 @@
                             <thead>
                                 <tr>
                                     <th>รูปภาพ</th>
-                                    <th>ชื่อผู้ใ้ช้</th>
+                                    <th>ชื่อผู้ใช้</th>
                                     <th>รหัสผ่าน</th>
                                     <th>ข้อมูล</th>
                                     <th>แก้ไข</th>
@@ -38,22 +47,21 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td><img class="img-thumbnail" src="https://ichef.bbci.co.uk/news/800/cpsprodpb/134CC/production/_125325097_roosterofredjunglefowlgettyimages.png" alt="" width="100" height="100"></td>
-                                    <td>demoกำทนกำทนกำทน</td>
-                                    <td>1234</td>
-                                    <td><button data-bs-toggle="modal" data-bs-target="#infoModalAdmin" class="btn btn-sm btn-primary text-white"><i class="fa-solid fa-circle-info"></i></button></td>
-                                    <td><button data-bs-toggle="modal" data-bs-target="#editModalAdmin" class="btn btn-sm btn-warning text-white"><i class="fa-solid fa-pen-to-square"></i></button></td>
-                                    <td><button class="btn btn-sm btn-danger text-white"><i class="fa-solid fa-trash"></i></button></td>
-                                </tr>
-                                <tr>
-                                    <td><img class="img-thumbnail" src="https://ichef.bbci.co.uk/news/800/cpsprodpb/134CC/production/_125325097_roosterofredjunglefowlgettyimages.png" alt="" width="100" height="100"></td>
-                                    <td>demo</td>
-                                    <td>12345</td>
-                                    <td><button data-bs-toggle="modal" data-bs-target="#infoModalAdmin" class="btn btn-sm btn-primary text-white"><i class="fa-solid fa-circle-info"></i></button></td>
-                                    <td><button data-bs-toggle="modal" data-bs-target="#editModalAdmin" class="btn btn-sm btn-warning text-white"><i class="fa-solid fa-pen-to-square"></i></button></td>
-                                    <td><button class="btn btn-sm btn-danger text-white"><i class="fa-solid fa-trash"></i></button></td>
-                                </tr>                                  
+                                <?php
+                                    include_once('include/connect.php');
+                                    $sql_get_data = "SELECT * FROM members";
+                                    $result = mysqli_query($conn, $sql_get_data);
+
+                                    while($row = $result->fetch_assoc()) : ?>
+                                        <tr>
+                                            <td><img class="img-thumbnail" src="https://ichef.bbci.co.uk/news/800/cpsprodpb/134CC/production/_125325097_roosterofredjunglefowlgettyimages.png" alt="" width="100" height="100"></td>
+                                            <td><?=$row['username'];?></td>
+                                            <td><?=$row['password'];?></td>
+                                            <td><button data-bs-toggle="modal" data-bs-target="#infoModalAdmin" class="btn btn-sm btn-primary text-white"><i class="fa-solid fa-circle-info"></i></button></td>
+                                            <td><button data-bs-toggle="modal" data-bs-target="#editModalAdmin" class="btn btn-sm btn-warning text-white"><i class="fa-solid fa-pen-to-square"></i></button></td>
+                                            <td><button class="btn btn-sm btn-danger text-white"><i class="fa-solid fa-trash"></i></button></td>
+                                        </tr>   
+                                <?php endwhile; ?>                              
                             </tbody>
                         </table>   
                     </div>

@@ -8,7 +8,7 @@
       </div>
       <div class="modal-body">
         <div class="row form-group">
-          <form action="">
+          <form>
             <div class="row mb-2">
               <div class="col text-center justify-content-center">
                 <label class="form-label">รูปภาพ</label>
@@ -20,43 +20,23 @@
             <div class="row mb-2">
               <div class="col">
                 <label class="form-label">ชื่อผู้ใช้</label>
-                <input type="text" class="form-control" value="" disabled>
+                <input type="text" name="username" class="form-control" placeholder="ชื่อผู้ใช้..." required>
               </div>
               <div class="col">
                 <label class="form-label">รหัสผ่าน</label>
-                <input type="text" class="form-control" value="" disabled>
+                <input type="text" name="password" class="form-control" placeholder="รหัสผ่าน..." required>
               </div>
             </div>
-            <div class="row mb-2">
-              <div class="col">
-                <label class="form-label">เพศ</label>
-                <input type="text" class="form-control" value="" disabled>
-              </div>
-              <div class="col">
-                <label class="form-label">อายุ</label>
-                <input type="text" class="form-control" value="" disabled>
-              </div>
-            </div>
-            <div class="row mb-2">
-              <div class="col">
-                <label class="form-label">วันเกิด</label>
-                <input type="text" class="form-control" value="" disabled>
-              </div>
-              <div class="col">
+              <div class="row mb-2">
+                <div class="col">
                   <label class="form-label">เบอร์โทร</label>
-                  <input type="email" class="form-control" value="" disabled>
+                  <input type="tel" name="tel"  class="form-control" placeholder="เบอร์โทร..." required>
+                </div>
+                <div class="col">
+                  <label class="form-label">อีเมล</label>
+                  <input type="email" name="email"  class="form-control" placeholder="อีเมล..." required>
                 </div>
               </div>
-            <div class="row mb-2">
-              <div class="col">
-                <label class="form-label">อีเมล</label>
-                <input type="text" class="form-control" value="" disabled>
-              </div>
-              <div class="col">
-                <label class="form-label">ที่อยู่</label>
-                <input type="text" class="form-control" value="" disabled>
-              </div>
-            </div>
           </form>
         </div>
       </div>
@@ -76,63 +56,48 @@
         <h1 class="modal-title fs-5" id="staticBackdropLabel"><i class="fa-solid fa-plus"></i>เพิ่มข้อมูลแอดมิน</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-        <div class="row form-group">
-          <form action="">
-            <div class="row mb-2">
-              <div class="col">
-                <label class="form-label">รูปภาพ</label>               
-                <input type="file" name="imgFile" class="form-control" id="inputGroupFile02">
+      <form method="post" enctype="multipart/form-data">
+        <div class="modal-body">
+          <div class="row form-group">
+              <div class="row mb-2">
+                <div class="col">
+                  <label class="form-label">รูปภาพ</label>               
+                  <input type="file" name="imgFile" class="form-control" id="inputGroupFile02">
+                </div>
               </div>
-            </div>
-            <div class="row mb-2">
-              <div class="col">
-                <label class="form-label">ชื่อผู้ใช้</label>
-                <input type="text" name="username" class="form-control" placeholder="ชื่อผู้ใช้...">
+              <div class="row mb-2">
+                <div class="col">
+                  <label class="form-label">ชื่อผู้ใช้</label>
+                  <input type="text" name="username" class="form-control" placeholder="ชื่อผู้ใช้..." required>
+                </div>
+                <div class="col">
+                  <label class="form-label">รหัสผ่าน</label>
+                  <input type="text" name="password" class="form-control" placeholder="รหัสผ่าน..." required>
+                </div>
               </div>
-              <div class="col">
-                <label class="form-label">รหัสผ่าน</label>
-                <input type="text" name="password" class="form-control" placeholder="รหัสผ่าน...">
-              </div>
-            </div>
-            <div class="row mb-2">
-              <div class="col">
-                <label class="form-label">เพศ</label>
-                <input type="text" name="sex" class="form-control" placeholder="เพศ...">
-              </div>
-              <div class="col">
-                <label class="form-label">วันเกิด</label>
-                <input type="date" name="bd_date" class="form-control">
-              </div>
-            </div>
-            <div class="row mb-2">
-              <div class="col">
+              <div class="row mb-2">
+                <div class="col">
                   <label class="form-label">เบอร์โทร</label>
-                  <input type="tel" name="tel"  class="form-control" placeholder="เบอร์โทร...">
-              </div>
-              <div class="col">
+                  <input type="tel" name="tel"  class="form-control" placeholder="เบอร์โทร..." required>
+                </div>
+                <div class="col">
                   <label class="form-label">อีเมล</label>
-                  <input type="email" name="email"  class="form-control" placeholder="อีเมล...">
+                  <input type="email" name="email"  class="form-control" placeholder="อีเมล..." required>
+                </div>
+                
               </div>
-            </div>
-            <div class="row mb-2">
-              <div class="col">
-                <label class="form-label">ที่อยู่</label>
-                <textarea class="form-control" aria-label="With textarea"></textarea>
-              </div>
-            </div>
-          </form>
+          </div>
         </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="fa-solid fa-circle-xmark"></i> ยกเลิก</button>
-        <button type="button" name="btnAddModal" class="btn btn-success"><i class="fa-solid fa-floppy-disk"></i> บันทึกข้อมูล</button>
-      </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="fa-solid fa-circle-xmark"></i> ยกเลิก</button>
+          <button type="submit" name="btnAddModal" class="btn btn-success"><i class="fa-solid fa-floppy-disk"></i> บันทึกข้อมูล</button>
+        </div>
+        <input type="hidden" name="role" value="admin">
+      </form>
     </div>
   </div>
 </div>
 <!--End Modal Add Data Admin -->
-
 
 <!-- Modal Edit Admin -->
 <div class="modal fade" id="editModalAdmin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -163,28 +128,12 @@
             </div>
             <div class="row mb-2">
               <div class="col">
-                <label class="form-label">เพศ</label>
-                <input type="text" class="form-control" value="">
-              </div>
-              <div class="col">
-                <label class="form-label">วันเกิด</label>
-                <input type="date" class="form-control">
-              </div>
-            </div>
-            <div class="row mb-2">
-              <div class="col">
                 <label class="form-label">เบอร์โทร</label>
                 <input type="text" class="form-control" value="">
               </div>
               <div class="col">
                   <label class="form-label">อีเมล</label>
                   <input type="email" class="form-control" value="">
-                </div>
-              </div>
-            <div class="row mb-2">
-              <div class="col">
-                <label class="form-label">ที่อยู่</label>
-                <textarea class="form-control" aria-label="With textarea"></textarea>
               </div>
             </div>
           </form>
