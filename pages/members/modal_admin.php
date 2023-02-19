@@ -88,17 +88,17 @@
             <div class="row mb-2">
               <div class="col">
                 <label class="form-label">ชื่อผู้ใช้</label>
-                <input type="text" name="username" class="form-control" placelholder="ชื่อผู้ใช้...">
+                <input type="text" name="username" class="form-control" placeholder="ชื่อผู้ใช้...">
               </div>
               <div class="col">
                 <label class="form-label">รหัสผ่าน</label>
-                <input type="text" name="password" class="form-control" placelholder="รหัสผ่าน...">
+                <input type="text" name="password" class="form-control" placeholder="รหัสผ่าน...">
               </div>
             </div>
             <div class="row mb-2">
               <div class="col">
                 <label class="form-label">เพศ</label>
-                <input type="text" name="sex" class="form-control" placelholder="เพศ...">
+                <input type="text" name="sex" class="form-control" placeholder="เพศ...">
               </div>
               <div class="col">
                 <label class="form-label">วันเกิด</label>
@@ -108,11 +108,11 @@
             <div class="row mb-2">
               <div class="col">
                   <label class="form-label">เบอร์โทร</label>
-                  <input type="tel" name="tel"  class="form-control" placelholder="เบอร์โทร...">
+                  <input type="tel" name="tel"  class="form-control" placeholder="เบอร์โทร...">
               </div>
               <div class="col">
                   <label class="form-label">อีเมล</label>
-                  <input type="email" name="email"  class="form-control" placelholder="อีเมล...">
+                  <input type="email" name="email"  class="form-control" placeholder="อีเมล...">
               </div>
             </div>
             <div class="row mb-2">
