@@ -1,7 +1,5 @@
 <?php
 
-use function PHPSTORM_META\type;
-
     include_once('include/connect.php'); 
 
     if (isset($_REQUEST['btnAddModal'])) {
