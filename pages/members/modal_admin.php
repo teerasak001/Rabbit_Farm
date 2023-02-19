@@ -82,38 +82,43 @@
             <div class="row mb-2">
               <div class="col">
                 <label class="form-label">รูปภาพ</label>               
-                <input type="file" class="form-control" id="inputGroupFile02">
+                <input type="file" name="imgFile" class="form-control" id="inputGroupFile02">
               </div>
             </div>
             <div class="row mb-2">
               <div class="col">
                 <label class="form-label">ชื่อผู้ใช้</label>
-                <input type="text" class="form-control" placelholder="">
+                <input type="text" name="username" class="form-control" placelholder="ชื่อผู้ใช้...">
               </div>
               <div class="col">
                 <label class="form-label">รหัสผ่าน</label>
-                <input type="text" class="form-control" placelholder="">
+                <input type="text" name="password" class="form-control" placelholder="รหัสผ่าน...">
               </div>
-              
             </div>
             <div class="row mb-2">
               <div class="col">
                 <label class="form-label">เพศ</label>
-                <input type="text" class="form-control" placelholder="">
+                <input type="text" name="sex" class="form-control" placelholder="เพศ...">
               </div>
               <div class="col">
                 <label class="form-label">วันเกิด</label>
-                <input type="date" class="form-control">
+                <input type="date" name="bd_date" class="form-control">
               </div>
             </div>
             <div class="row mb-2">
               <div class="col">
                   <label class="form-label">เบอร์โทร</label>
-                  <input type="email" class="form-control" placelholder="">
+                  <input type="tel" name="tel"  class="form-control" placelholder="เบอร์โทร...">
               </div>
-                <div class="col">
-                  <label class="form-label">ที่อยู่</label>
-                  <textarea class="form-control" aria-label="With textarea"></textarea>
+              <div class="col">
+                  <label class="form-label">อีเมล</label>
+                  <input type="email" name="email"  class="form-control" placelholder="อีเมล...">
+              </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col">
+                <label class="form-label">ที่อยู่</label>
+                <textarea class="form-control" aria-label="With textarea"></textarea>
               </div>
             </div>
           </form>
@@ -121,7 +126,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i class="fa-solid fa-circle-xmark"></i> ยกเลิก</button>
-        <button type="button" class="btn btn-success"><i class="fa-solid fa-floppy-disk"></i> บันทึกข้อมูล</button>
+        <button type="button" name="btnAddModal" class="btn btn-success"><i class="fa-solid fa-floppy-disk"></i> บันทึกข้อมูล</button>
       </div>
     </div>
   </div>
