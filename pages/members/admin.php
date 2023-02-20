@@ -1,8 +1,8 @@
 <?php  
 
-include_once('include/connect.php');
+include('include/connect.php');
 
-if (isset($_POST) && !empty($_POST)) {
+if (isset($_POST['btnAddModa']) && !empty($_POST)) {
   $username = $_POST['username'];
   $password = $_POST['password'];
   $phone = $_POST['tel'];
@@ -16,7 +16,6 @@ if (isset($_POST) && !empty($_POST)) {
     echo "Error";
   }  
 }
-mysqli_close($conn);
 
 ?>
 
@@ -47,21 +46,14 @@ mysqli_close($conn);
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php
-                                    include_once('include/connect.php');
-                                    $sql_get_data = "SELECT * FROM members";
-                                    $result = mysqli_query($conn, $sql_get_data);
-
-                                    while($row = $result->fetch_assoc()) : ?>
-                                        <tr>
-                                            <td><img class="img-thumbnail" src="https://ichef.bbci.co.uk/news/800/cpsprodpb/134CC/production/_125325097_roosterofredjunglefowlgettyimages.png" alt="" width="100" height="100"></td>
-                                            <td><?=$row['username'];?></td>
-                                            <td><?=$row['password'];?></td>
-                                            <td><button data-bs-toggle="modal" data-bs-target="#infoModalAdmin" class="btn btn-sm btn-primary text-white"><i class="fa-solid fa-circle-info"></i></button></td>
-                                            <td><button data-bs-toggle="modal" data-bs-target="#editModalAdmin" class="btn btn-sm btn-warning text-white"><i class="fa-solid fa-pen-to-square"></i></button></td>
-                                            <td><button class="btn btn-sm btn-danger text-white"><i class="fa-solid fa-trash"></i></button></td>
-                                        </tr>   
-                                <?php endwhile; ?>                              
+                                <tr>
+                                    <td><img class="img-thumbnail" src="https://ichef.bbci.co.uk/news/800/cpsprodpb/134CC/production/_125325097_roosterofredjunglefowlgettyimages.png" alt="" width="100" height="100"></td>
+                                    <td>grfg</td>
+                                    <td>fgffh</td>
+                                    <td><button data-bs-toggle="modal" data-bs-target="#infoModalAdmin" class="btn btn-sm btn-primary text-white"><i class="fa-solid fa-circle-info"></i></button></td>
+                                    <td><button data-bs-toggle="modal" data-bs-target="#editModalAdmin" class="btn btn-sm btn-warning text-white"><i class="fa-solid fa-pen-to-square"></i></button></td>
+                                    <td><button class="btn btn-sm btn-danger text-white"><i class="fa-solid fa-trash"></i></button></td>
+                                </tr>                                 
                             </tbody>
                         </table>   
                     </div>
